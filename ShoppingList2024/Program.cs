@@ -9,16 +9,10 @@
     {"Popcorn", 6.99m },
     {"Soap", 2.30m }
 };
-
 Dictionary<string, decimal> itemsOrdered = items.OrderBy(x => x.Value).ToDictionary(StringComparer.OrdinalIgnoreCase);
-
 List<string> cart = new List<string>();
-
 decimal sum = 0;
-
 bool loop = true;
-
-int tempNum = 0;
 
 while (loop)
 {
